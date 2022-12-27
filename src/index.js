@@ -27,6 +27,7 @@ function onSearch(e) {
             refs.infoRef.innerHTML = markup;
         } else if (country.length >= 2 && country.length <= 10) {
             const markup = makeCountriesMarkup(country);
+            refs.listRef.innerHTML = markup
         } else {
             removeContent();
             Notify.info(
